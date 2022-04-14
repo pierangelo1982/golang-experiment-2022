@@ -12,4 +12,8 @@
 
 [01 - first api with gin](./01_first_api/)
 
-[02 - api with gin & mysql](./02_mysql/)
+[02 - mysql](./02_mysql/)
+
+&nbsp;&nbsp;&nbsp;&nbsp;[01 - api with gin & mysql](./02_mysql/01_mysql_with_gin/)
+
+&nbsp;&nbsp;&nbsp;&nbsp;[01 - mysql example](./02_mysql/02_mysql_example/)
