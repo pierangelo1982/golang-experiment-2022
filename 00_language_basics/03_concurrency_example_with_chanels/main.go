@@ -7,22 +7,30 @@ import (
 
 func main() {
 	out1 := make(chan string)
-	go process("order", out1)
-	for {
-		msg, open := <-out1
-		if !open {
-			break
-		}
-		fmt.Println(msg)
-	}
-}
+	out2 := make(chan string)
 
-func process(item string, out chan string) {
-	defer close(out)
-	for i := 1; i <= 10; i++ {
-		time.Sleep(time.Second / 2)
-		//fmt.Println("Processed", i, item)
-		out <- item
+	go func() {
+		for {
+			time.Sleep(time.Second)
+			out1 <- "order processed"
+		}
+	}()
+
+	go func() {
+		for {
+			time.Sleep(time.Second)
+			out2 <- "refund processed"
+		}
+	}()
+
+	for {
+		select {
+		case msg := <-out1:
+			fmt.Println(msg)
+		case msg := <-out2:
+			fmt.Println(msg)
+		}
+		fmt.Println(<-out1)
+		fmt.Println(<-out2)
 	}
-	//close(out)
 }
