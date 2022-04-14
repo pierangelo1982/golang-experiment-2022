@@ -16,4 +16,4 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;[01 - api with gin & mysql](./02_mysql/01_mysql_with_gin/)
 
-&nbsp;&nbsp;&nbsp;&nbsp;[01 - mysql example](./02_mysql/02_mysql_example/)
+&nbsp;&nbsp;&nbsp;&nbsp;[02 - mysql example](./02_mysql/02_mysql_example/)
