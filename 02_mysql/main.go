@@ -2,6 +2,8 @@ package main
 
 import (
 	"database/sql"
+	"fmt"
+	"log"
 	"net/http"
 	"os"
 	"time"
@@ -9,12 +11,8 @@ import (
 	"github.com/gin-gonic/gin"
 
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/joho/godotenv"
 )
-
-var dbUser string = os.Getenv("DATABASE_USERNAME")
-var dbPassword string = os.Getenv("DATABASE_PASSWORD")
-var dbHost string = os.Getenv("DATABASE_HOST")
-var dbPort string = os.Getenv("DATABASE_PORT")
 
 type city struct {
 	ID      string `json:"id"`
@@ -23,7 +21,21 @@ type city struct {
 }
 
 func dbConnection() (*sql.DB, error) {
-	db, err := sql.Open("mysql", "root:alnitek82@tcp(0.0.0.0:3306)/demo")
+	err := godotenv.Load(".env")
+
+	if err != nil {
+		log.Fatalf("Error loading .env file")
+	}
+
+	var dbUser string = os.Getenv("DATABASE_USERNAME")
+	var dbPassword string = os.Getenv("DATABASE_PASSWORD")
+	var dbHost string = os.Getenv("DATABASE_HOST")
+	var dbPort string = os.Getenv("DATABASE_PORT")
+
+	fmt.Println(dbUser, dbPassword, dbHost, dbPort)
+	var dbUrl string = fmt.Sprintf("%s:%s@tcp(%s:%s)/demo", dbUser, dbPassword, dbHost, dbPort)
+	fmt.Println("@@@@@@@@@", dbUrl)
+	db, err := sql.Open("mysql", dbUrl)
 	if err != nil {
 		//panic(err)
 		return nil, err
