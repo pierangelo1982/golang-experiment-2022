@@ -21,8 +21,8 @@ type city struct {
 }
 
 func dbConnection() (*sql.DB, error) {
-	err := godotenv.Load(".env")
 
+	err := godotenv.Load(".env")
 	if err != nil {
 		log.Fatalf("Error loading .env file")
 	}
@@ -34,7 +34,6 @@ func dbConnection() (*sql.DB, error) {
 
 	fmt.Println(dbUser, dbPassword, dbHost, dbPort)
 	var dbUrl string = fmt.Sprintf("%s:%s@tcp(%s:%s)/demo", dbUser, dbPassword, dbHost, dbPort)
-	fmt.Println("@@@@@@@@@", dbUrl)
 	db, err := sql.Open("mysql", dbUrl)
 	if err != nil {
 		//panic(err)
