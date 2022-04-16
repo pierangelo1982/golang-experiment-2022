@@ -23,3 +23,5 @@
 [03 - fetch external api](./03_fetch_external_api/)
 
 [04 - parsing json and xml](./04_parse_json_and_xml)
+
+[05 - parsing json and xml with graphql](./05_parsing_json_and_xml_with_graphql/)
