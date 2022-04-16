@@ -21,3 +21,5 @@
 &nbsp;&nbsp;&nbsp;&nbsp;[03 - mysql example -refactor](./02_mysql/03_mysql_example_refactor/)
 
 [03 - fetch external api](./03_fetch_external_api/)
+
+[04 - parsing json and xml](./04_parse_json_and_xml)
