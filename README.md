@@ -19,3 +19,5 @@
 &nbsp;&nbsp;&nbsp;&nbsp;[02 - mysql example](./02_mysql/02_mysql_example/)
 
 &nbsp;&nbsp;&nbsp;&nbsp;[03 - mysql example -refactor](./02_mysql/03_mysql_example_refactor/)
+
+[03 - fetch external api](./03_fetch_external_api/)
