@@ -10,6 +10,10 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;[03 - concurrency with chanels](./00_language_basics/03_concurrency_example_with_chanels/)
 
+&nbsp;&nbsp;&nbsp;&nbsp;[04 - interfaces](./00_language_basics/04_interfaces/)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[01 - interfaces basic](./00_language_basics/04_interfaces/01_interfaces_basic/)
+
 [01 - first api with gin](./01_first_api/)
 
 [02 - mysql](./02_mysql/)
