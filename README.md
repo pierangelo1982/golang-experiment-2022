@@ -14,7 +14,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[01 - interfaces basic](./00_language_basics/04_interfaces/01_interfaces_basic/)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[01 - interfaces basic 2](./00_language_basics/04_interfaces/02_interfaces_basics_2/)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[02 - interfaces basic 2](./00_language_basics/04_interfaces/02_interfaces_basics_2/)
 
 
 [01 - first api with gin](./01_first_api/)
