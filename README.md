@@ -18,8 +18,6 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[03 - interfaces basic 3](./00_language_basics/04_interfaces/03_interfaces_basics_3/)
 
-
-
 [01 - first api with gin](./01_first_api/)
 
 [02 - mysql](./02_mysql/)

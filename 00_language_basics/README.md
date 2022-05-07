@@ -5,3 +5,5 @@
 [02 - concurrency example 2](./02_concurrency_example_2/)
 
 [03 - concurrency with chanels](./03_concurrency_example_with_chanels/)
+
+[04 - interfaces](./04_interfaces/)
