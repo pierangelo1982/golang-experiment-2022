@@ -37,3 +37,5 @@
 [06 - cobra cli](./06_cobra_cli/)
 
 [07 - aws lambda](./07_aws_lambda)
+
+[08 - gorm mysql](./08_gorm_mysql)
