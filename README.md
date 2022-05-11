@@ -35,3 +35,5 @@
 [05 - parsing json and xml with graphql](./05_parsing_json_and_xml_with_graphql/)
 
 [06 - cobra cli](./06_cobra_cli/)
+
+[07 - aws lambda](./07_aws_lambda)
